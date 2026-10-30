@@ -1,6 +1,6 @@
 ---
 name: be-sweet
-description: Help the owner thank someone with a short voice affirmation in their own voice, using the installed Be Sweet mini-app. Offers three questions to help them find their own words and explains how to share a Be Sweet story with John F. Kim directly. Public read-only; no accounts, no private data, nothing collected, nothing sold.
+description: Help the owner thank someone with a short voice affirmation in their own voice, using the installed Be Sweet mini-app. Offers three questions to help them find their own words and explains how to share a Be Sweet story with ECI Loves Goa Baking Co. directly. Public read-only; no accounts, no private data, nothing collected; every heart a gift and a vehicle of love.
 version: 1.0.0
 ---
 
@@ -9,7 +9,7 @@ version: 1.0.0
 Be Sweet grew out of the ECI Loves Goa Baking Co. pop-up bakery at Edge City
 India, where a kind word was spoken over every mango mochi heart. The practice:
 give someone a treat and a short voice affirmation, in your own voice. Gift
-only; nothing is sold.
+only, and a vehicle of love.
 
 Use this optional installed mini-app only when the owner asks for help thanking
 or appreciating someone, or asks how to share what a Be Sweet treat or kind
