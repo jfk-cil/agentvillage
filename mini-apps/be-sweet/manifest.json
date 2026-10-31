@@ -2,8 +2,8 @@
   "manifest": 2,
   "id": "be-sweet",
   "name": "Be Sweet",
-  "version": "1.0.0",
-  "description": "Be Sweet helps a resident thank someone with a short voice affirmation in their own voice: three questions to help them find their own words, and how to share a Be Sweet story with ECI Loves Goa Baking Co. directly. From the ECI Loves Goa Baking Co. pop-up bakery. Read-only; nothing collected, nothing sold.",
+  "version": "1.2.0",
+  "description": "Be Sweet helps a resident thank someone with a short voice affirmation in their own voice: gentle questions and sentence starters, a short walk-through for sharing what a mochi heart or a kind word meant with the Be Sweet team, and the public Signs of Love page in its own words (row by row, never a total, no names). From the ECI Loves Goa Baking Co. pop-up bakery, where every heart was a gift. Read-only; nothing collected.",
   "homepage": "https://be-sweet.leo-relay-jfk.workers.dev/",
   "owner": {
     "github": "jfk-cil"
@@ -12,8 +12,8 @@
   "permissions": [
     {
       "kind": "read",
-      "label": "Be Sweet prompts and how to share a story",
-      "description": "Reads three questions that help you find your own words, and how to tell ECI Loves Goa Baking Co. a Be Sweet story yourself. Calls send no arguments and no identity. No accounts, profiles, purchases or private data; nothing is stored and no data goes to any third party."
+      "label": "Be Sweet prompts, how to share a story, and the Signs of Love page",
+      "description": "Reads gentle questions and sentence starters for thanking someone in your own voice, how to share a Be Sweet story with the Be Sweet team yourself, and the public Signs of Love page in its own words (each row as the page shows it, never added together, with no names). Calls send no arguments and no identity. No accounts, profiles, purchases or private data; nothing is stored and no data goes to any third party."
     }
   ],
   "service": {
@@ -55,13 +55,29 @@
       "maxResponseBytes": 32768,
       "timeoutMs": 25000,
       "framing": "data"
+    },
+    {
+      "name": "be-sweet.signs",
+      "class": "read",
+      "target": {
+        "tool": "signs_of_love"
+      },
+      "input": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": false
+      },
+      "maxRequestBytes": 4096,
+      "maxResponseBytes": 32768,
+      "timeoutMs": 25000,
+      "framing": "data"
     }
   ],
   "skills": [
     {
       "name": "be-sweet",
-      "version": "1.0.0",
-      "sha256": "a72d826f17145f39847f4b33066c695dd4819f9eca79f5e16d303783877f853d",
+      "version": "1.2.0",
+      "sha256": "1220f7917e5ab6ae49759f7851cf09f75236ee82878bd30c7fdcef267b2b41ab",
       "path": "skills/be-sweet/SKILL.md"
     }
   ]

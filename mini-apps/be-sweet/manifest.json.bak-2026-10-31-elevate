@@ -1,0 +1,68 @@
+{
+  "manifest": 2,
+  "id": "be-sweet",
+  "name": "Be Sweet",
+  "version": "1.1.0",
+  "description": "Be Sweet helps a resident thank someone with a short voice affirmation in their own voice: gentle questions and sentence starters, and a short walk-through for sharing what a mochi heart or a kind word meant with the Be Sweet team. From the ECI Loves Goa Baking Co. pop-up bakery, where every heart was a gift. Read-only; nothing collected.",
+  "homepage": "https://be-sweet.leo-relay-jfk.workers.dev/",
+  "owner": {
+    "github": "jfk-cil"
+  },
+  "visibility": "sandbox",
+  "permissions": [
+    {
+      "kind": "read",
+      "label": "Be Sweet prompts and how to share a story",
+      "description": "Reads gentle questions and sentence starters for thanking someone in your own voice, and how to share a Be Sweet story with the Be Sweet team yourself. Calls send no arguments and no identity. No accounts, profiles, purchases or private data; nothing is stored and no data goes to any third party."
+    }
+  ],
+  "service": {
+    "kind": "mcp",
+    "baseUrl": "https://be-sweet.leo-relay-jfk.workers.dev/mcp",
+    "auth": {
+      "mode": "none"
+    }
+  },
+  "operations": [
+    {
+      "name": "be-sweet.prompts",
+      "class": "read",
+      "target": {
+        "tool": "be_sweet_prompts"
+      },
+      "input": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": false
+      },
+      "maxRequestBytes": 4096,
+      "maxResponseBytes": 32768,
+      "timeoutMs": 25000,
+      "framing": "data"
+    },
+    {
+      "name": "be-sweet.how_to_share",
+      "class": "read",
+      "target": {
+        "tool": "how_to_share_a_story"
+      },
+      "input": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": false
+      },
+      "maxRequestBytes": 4096,
+      "maxResponseBytes": 32768,
+      "timeoutMs": 25000,
+      "framing": "data"
+    }
+  ],
+  "skills": [
+    {
+      "name": "be-sweet",
+      "version": "1.1.0",
+      "sha256": "26147ccd9ea199d6a9cf7e34c37a667f26b5a54530b7d3dae00dcb30cf93d911",
+      "path": "skills/be-sweet/SKILL.md"
+    }
+  ]
+}
